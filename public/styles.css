@@ -1,0 +1,79 @@
+ul, #tree {
+  list-style-type: none;
+}
+
+#tree {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.new_element_btn,
+.caret-delete,
+.caret-edit {
+  color: green;
+  text-decoration: underline;
+}
+
+.new_element_btn:hover, .new_element_btn:focus,
+.caret-delete:hover, .caret-edit:hover,
+.caret-delete:focus, .caret-edit:focus{
+  color: blue;
+  font-style: bold;
+}
+
+.caret-desc {
+  color: gray;
+  font-size: 10px;
+}
+
+.new_form,
+.edit_form {
+  display: none;
+}
+
+.del_form {
+  display:inline;
+}
+
+.del_element_sbm {
+  border:none;
+  background: #fff;
+  color: green;
+  text-decoration: underline;
+}
+
+.del_element_sbm:hover,
+.del_element_sbm:focus {
+  outline:none;
+  color: blue;
+  font-style: bold;
+}
+
+.caret-edit,
+.del_element_sbm {
+  font: 400 13.3333px Arial;
+}
